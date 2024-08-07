@@ -1,0 +1,21 @@
+DECLARE @DATABASE VARCHAR(16) = $(DatabaseName);
+DECLARE @MAX_STRIPING INT = $(Striping);
+
+DECLARE @EXEC_SQL VARCHAR(MAX);
+DECLARE @StringDate CHAR(12) = FORMAT(GETDATE(),'yyyyMMddHHmm');
+DECLARE @BACKUP_URL VARCHAR(128) = $(S3bucket) + @DATABASE + '_LOG_' + @StringDate;
+DECLARE @Counter INT;
+
+SET @Counter=1;
+SET @EXEC_SQL = 'BACKUP LOG [' + @DATABASE + '] TO ';
+WHILE ( @Counter <= @MAX_STRIPING)
+BEGIN
+    SET @EXEC_SQL = @EXEC_SQL + 'URL = ''' + @BACKUP_URL + '_' + FORMAT(@Counter, 'D2') + '.trn'''
+    SET @Counter  = @Counter  + 1
+	IF ( @Counter <= @MAX_STRIPING ) 
+	  SET @EXEC_SQL = @EXEC_SQL + ', ';
+END
+SET @EXEC_SQL = @EXEC_SQL + ' WITH FORMAT, MAXTRANSFERSIZE = 20971520, COMPRESSION, STATS = 10;';
+
+PRINT NCHAR(13) + NCHAR(10) + @EXEC_SQL;
+EXEC (@EXEC_SQL);

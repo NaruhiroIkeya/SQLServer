@@ -1,0 +1,1473 @@
+[//07/2 17:44:40.35] ===== SQLServer Check Database Start ===== 
+ 
+[//07/2 17:44:40.37] ================ Parameters ================= 
+[//07/2 17:44:40.38] Database Host Name       = HCCSQLServerVM 
+[//07/2 17:44:40.38] Execute SQL              = C:\scripts\bin\CheckDatabase4AllDatabases.sql 
+[//07/2 17:44:40.40] ============================================== 
+ 
+"C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\SQLCMD.EXE" -E -S HCCSQLServerVM\ -i C:\scripts\bin\CheckDatabase4AllDatabases.sql -o C:\scripts\log\HCCSQLServerVM_CheckDB_072517443982.log -b -r1  
+---CHECKDB for All Databases---
+---START DATE & TIME---
+2024-07-25 17:44:40.497
+DBCC results for 'master'.
+Service Broker Msg 9675, State 1: Message Types analyzed: 14.
+Service Broker Msg 9676, State 1: Service Contracts analyzed: 6.
+Service Broker Msg 9667, State 1: Services analyzed: 3.
+Service Broker Msg 9668, State 1: Service Queues analyzed: 3.
+Service Broker Msg 9669, State 1: Conversation Endpoints analyzed: 0.
+Service Broker Msg 9674, State 1: Conversation Groups analyzed: 0.
+Service Broker Msg 9670, State 1: Remote Service Bindings analyzed: 0.
+Service Broker Msg 9605, State 1: Conversation Priorities analyzed: 0.
+DBCC results for 'sys.sysrscols'.
+There are 1644 rows in 22 pages for object "sys.sysrscols".
+DBCC results for 'sys.sysrowsets'.
+There are 206 rows in 3 pages for object "sys.sysrowsets".
+DBCC results for 'sys.sysclones'.
+There are 0 rows in 0 pages for object "sys.sysclones".
+DBCC results for 'sys.sysallocunits'.
+There are 246 rows in 4 pages for object "sys.sysallocunits".
+DBCC results for 'sys.sysfiles1'.
+There are 2 rows in 1 pages for object "sys.sysfiles1".
+DBCC results for 'sys.sysseobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysseobjvalues".
+DBCC results for 'sys.sysmatrixages'.
+There are 0 rows in 0 pages for object "sys.sysmatrixages".
+DBCC results for 'sys.syspriorities'.
+There are 0 rows in 0 pages for object "sys.syspriorities".
+DBCC results for 'sys.sysdbfrag'.
+There are 8 rows in 1 pages for object "sys.sysdbfrag".
+DBCC results for 'sys.sysfgfrag'.
+There are 0 rows in 0 pages for object "sys.sysfgfrag".
+DBCC results for 'sys.sysdbfiles'.
+There are 2 rows in 1 pages for object "sys.sysdbfiles".
+DBCC results for 'sys.syspru'.
+There are 8 rows in 1 pages for object "sys.syspru".
+DBCC results for 'sys.sysbrickfiles'.
+There are 17 rows in 2 pages for object "sys.sysbrickfiles".
+DBCC results for 'sys.sysphfg'.
+There are 1 rows in 1 pages for object "sys.sysphfg".
+DBCC results for 'sys.sysprufiles'.
+There are 2 rows in 1 pages for object "sys.sysprufiles".
+DBCC results for 'sys.sysftinds'.
+There are 0 rows in 0 pages for object "sys.sysftinds".
+DBCC results for 'sys.sysowners'.
+There are 16 rows in 1 pages for object "sys.sysowners".
+DBCC results for 'sys.sysdbreg'.
+There are 8 rows in 1 pages for object "sys.sysdbreg".
+DBCC results for 'sys.sysprivs'.
+There are 2699 rows in 20 pages for object "sys.sysprivs".
+DBCC results for 'sys.sysschobjs'.
+There are 2796 rows in 48 pages for object "sys.sysschobjs".
+DBCC results for 'sys.syscsrowgroups'.
+There are 0 rows in 0 pages for object "sys.syscsrowgroups".
+DBCC results for 'sys.sysextsources'.
+There are 0 rows in 0 pages for object "sys.sysextsources".
+DBCC results for 'sys.sysexttables'.
+There are 0 rows in 0 pages for object "sys.sysexttables".
+DBCC results for 'sys.sysextfileformats'.
+There are 0 rows in 0 pages for object "sys.sysextfileformats".
+DBCC results for 'sys.syslogshippers'.
+There are 0 rows in 0 pages for object "sys.syslogshippers".
+DBCC results for 'sys.sysmultiobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysmultiobjvalues".
+DBCC results for 'sys.syscolpars'.
+There are 1383 rows in 28 pages for object "sys.syscolpars".
+DBCC results for 'sys.sysxlgns'.
+There are 48 rows in 1 pages for object "sys.sysxlgns".
+DBCC results for 'sys.sysxsrvs'.
+There are 1 rows in 1 pages for object "sys.sysxsrvs".
+DBCC results for 'sys.sysnsobjs'.
+There are 1 rows in 1 pages for object "sys.sysnsobjs".
+DBCC results for 'sys.sysusermsgs'.
+There are 0 rows in 0 pages for object "sys.sysusermsgs".
+DBCC results for 'sys.syscerts'.
+There are 7 rows in 3 pages for object "sys.syscerts".
+DBCC results for 'sys.sysrmtlgns'.
+There are 0 rows in 0 pages for object "sys.sysrmtlgns".
+DBCC results for 'sys.syslnklgns'.
+There are 1 rows in 1 pages for object "sys.syslnklgns".
+DBCC results for 'sys.sysxprops'.
+There are 0 rows in 0 pages for object "sys.sysxprops".
+DBCC results for 'sys.sysscalartypes'.
+There are 34 rows in 1 pages for object "sys.sysscalartypes".
+DBCC results for 'sys.systypedsubobjs'.
+There are 0 rows in 0 pages for object "sys.systypedsubobjs".
+DBCC results for 'sys.sysidxstats'.
+There are 268 rows in 5 pages for object "sys.sysidxstats".
+DBCC results for 'sys.sysiscols'.
+There are 492 rows in 4 pages for object "sys.sysiscols".
+DBCC results for 'sys.sysendpts'.
+There are 5 rows in 1 pages for object "sys.sysendpts".
+DBCC results for 'sys.syswebmethods'.
+There are 0 rows in 0 pages for object "sys.syswebmethods".
+DBCC results for 'sys.sysbinobjs'.
+There are 23 rows in 1 pages for object "sys.sysbinobjs".
+DBCC results for 'sys.sysaudacts'.
+There are 0 rows in 0 pages for object "sys.sysaudacts".
+DBCC results for 'sys.sysobjvalues'.
+There are 716 rows in 45 pages for object "sys.sysobjvalues".
+DBCC results for 'sys.sysmatrixconfig'.
+There are 0 rows in 0 pages for object "sys.sysmatrixconfig".
+DBCC results for 'sys.syscscolsegments'.
+There are 0 rows in 0 pages for object "sys.syscscolsegments".
+DBCC results for 'sys.syscsdictionaries'.
+There are 0 rows in 0 pages for object "sys.syscsdictionaries".
+DBCC results for 'sys.sysclsobjs'.
+There are 35 rows in 1 pages for object "sys.sysclsobjs".
+DBCC results for 'sys.sysrowsetrefs'.
+There are 0 rows in 0 pages for object "sys.sysrowsetrefs".
+DBCC results for 'sys.sysremsvcbinds'.
+There are 0 rows in 0 pages for object "sys.sysremsvcbinds".
+DBCC results for 'sys.sysxmitqueue'.
+There are 0 rows in 0 pages for object "sys.sysxmitqueue".
+DBCC results for 'sys.sysrts'.
+There are 1 rows in 1 pages for object "sys.sysrts".
+DBCC results for 'sys.sysmatrixbricks'.
+There are 0 rows in 0 pages for object "sys.sysmatrixbricks".
+DBCC results for 'sys.sysconvgroup'.
+There are 0 rows in 0 pages for object "sys.sysconvgroup".
+DBCC results for 'sys.sysdesend'.
+There are 0 rows in 0 pages for object "sys.sysdesend".
+DBCC results for 'sys.sysdercv'.
+There are 0 rows in 0 pages for object "sys.sysdercv".
+DBCC results for 'sys.syssingleobjrefs'.
+There are 254 rows in 1 pages for object "sys.syssingleobjrefs".
+DBCC results for 'sys.sysmultiobjrefs'.
+There are 117 rows in 2 pages for object "sys.sysmultiobjrefs".
+DBCC results for 'sys.sysmatrixmanagers'.
+There are 0 rows in 0 pages for object "sys.sysmatrixmanagers".
+DBCC results for 'sys.sysguidrefs'.
+There are 1 rows in 1 pages for object "sys.sysguidrefs".
+DBCC results for 'sys.sysfoqueues'.
+There are 0 rows in 0 pages for object "sys.sysfoqueues".
+DBCC results for 'sys.syschildinsts'.
+There are 0 rows in 0 pages for object "sys.syschildinsts".
+DBCC results for 'sys.sysextendedrecoveryforks'.
+There are 0 rows in 0 pages for object "sys.sysextendedrecoveryforks".
+DBCC results for 'sys.syscompfragments'.
+There are 0 rows in 0 pages for object "sys.syscompfragments".
+DBCC results for 'sys.sysmatrixageforget'.
+There are 0 rows in 0 pages for object "sys.sysmatrixageforget".
+DBCC results for 'sys.sysftsemanticsdb'.
+There are 0 rows in 0 pages for object "sys.sysftsemanticsdb".
+DBCC results for 'sys.sysftstops'.
+There are 0 rows in 0 pages for object "sys.sysftstops".
+DBCC results for 'sys.sysftproperties'.
+There are 0 rows in 0 pages for object "sys.sysftproperties".
+DBCC results for 'sys.sysxmitbody'.
+There are 0 rows in 0 pages for object "sys.sysxmitbody".
+DBCC results for 'sys.sysfos'.
+There are 0 rows in 0 pages for object "sys.sysfos".
+DBCC results for 'sys.sysqnames'.
+There are 115 rows in 1 pages for object "sys.sysqnames".
+DBCC results for 'sys.sysxmlcomponent'.
+There are 100 rows in 1 pages for object "sys.sysxmlcomponent".
+DBCC results for 'sys.sysxmlfacet'.
+There are 112 rows in 1 pages for object "sys.sysxmlfacet".
+DBCC results for 'sys.sysxmlplacement'.
+There are 19 rows in 1 pages for object "sys.sysxmlplacement".
+DBCC results for 'sys.sysobjkeycrypts'.
+There are 8 rows in 1 pages for object "sys.sysobjkeycrypts".
+DBCC results for 'sys.sysasymkeys'.
+There are 0 rows in 1 pages for object "sys.sysasymkeys".
+DBCC results for 'sys.syssqlguides'.
+There are 0 rows in 0 pages for object "sys.syssqlguides".
+DBCC results for 'sys.sysbinsubobjs'.
+There are 3 rows in 1 pages for object "sys.sysbinsubobjs".
+DBCC results for 'sys.syssoftobjrefs'.
+There are 0 rows in 0 pages for object "sys.syssoftobjrefs".
+DBCC results for 'spt_fallback_db'.
+There are 0 rows in 0 pages for object "spt_fallback_db".
+DBCC results for 'spt_fallback_dev'.
+There are 0 rows in 0 pages for object "spt_fallback_dev".
+DBCC results for 'spt_fallback_usg'.
+There are 0 rows in 0 pages for object "spt_fallback_usg".
+DBCC results for 'sys.sql_pools_table'.
+There are 0 rows in 0 pages for object "sys.sql_pools_table".
+DBCC results for 'sys.ledger_tables_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal".
+DBCC results for 'sys.ledger_tables_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal_history".
+DBCC results for 'sys.ledger_columns_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal".
+DBCC results for 'sys.ledger_columns_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal_history".
+DBCC results for 'sys.db_ledger_digest_locations'.
+There are 0 rows in 0 pages for object "sys.db_ledger_digest_locations".
+DBCC results for 'sys.plan_persist_replicas'.
+There are 0 rows in 0 pages for object "sys.plan_persist_replicas".
+DBCC results for 'sys.plan_persist_plan_forcing_locations'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_forcing_locations".
+DBCC results for 'sys.plan_persist_runtime_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_v2".
+DBCC results for 'sys.plan_persist_wait_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats_v2".
+DBCC results for 'spt_monitor'.
+There are 1 rows in 1 pages for object "spt_monitor".
+DBCC results for 'sys.queue_messages_1003150619'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1003150619".
+DBCC results for 'sys.queue_messages_1035150733'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1035150733".
+DBCC results for 'sys.queue_messages_1067150847'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1067150847".
+DBCC results for 'sys.syscommittab'.
+There are 0 rows in 0 pages for object "sys.syscommittab".
+DBCC results for 'sys.sqlagent_jobs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobs".
+DBCC results for 'sys.sqlagent_jobsteps'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps".
+DBCC results for 'sys.sqlagent_job_history'.
+There are 0 rows in 0 pages for object "sys.sqlagent_job_history".
+DBCC results for 'sys.sqlagent_jobsteps_logs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps_logs".
+DBCC results for 'sys.plan_persist_query_text'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_text".
+DBCC results for 'sys.plan_persist_query'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query".
+DBCC results for 'sys.plan_persist_plan'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan".
+DBCC results for 'sys.plan_persist_runtime_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats".
+DBCC results for 'sys.plan_persist_runtime_stats_interval'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_interval".
+DBCC results for 'sys.plan_persist_context_settings'.
+There are 0 rows in 0 pages for object "sys.plan_persist_context_settings".
+DBCC results for 'sys.plan_persist_query_hints'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_hints".
+DBCC results for 'sys.plan_persist_query_template_parameterization'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_template_parameterization".
+DBCC results for 'sys.plan_persist_wait_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats".
+DBCC results for 'sys.persistent_version_store'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store".
+DBCC results for 'sys.persistent_version_store_long_term'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store_long_term".
+DBCC results for 'sys._trusted_assemblies'.
+There are 0 rows in 0 pages for object "sys._trusted_assemblies".
+DBCC results for 'sys.tbl_server_resource_stats'.
+There are 0 rows in 0 pages for object "sys.tbl_server_resource_stats".
+DBCC results for 'sys.external_library_setup_failures'.
+There are 0 rows in 0 pages for object "sys.external_library_setup_failures".
+DBCC results for 'sys.external_libraries_installed_table'.
+There are 0 rows in 0 pages for object "sys.external_libraries_installed_table".
+DBCC results for 'sys.polaris_file_statistics'.
+There are 0 rows in 0 pages for object "sys.polaris_file_statistics".
+DBCC results for 'sys.db_ledger_blocks'.
+There are 0 rows in 0 pages for object "sys.db_ledger_blocks".
+DBCC results for 'sys.db_ledger_transactions'.
+There are 0 rows in 0 pages for object "sys.db_ledger_transactions".
+DBCC results for 'sys.polaris_executed_requests_history'.
+There are 0 rows in 0 pages for object "sys.polaris_executed_requests_history".
+DBCC results for 'sys.polaris_executed_requests_text'.
+There are 0 rows in 0 pages for object "sys.polaris_executed_requests_text".
+DBCC results for 'sys.backup_metadata_store'.
+There are 0 rows in 0 pages for object "sys.backup_metadata_store".
+DBCC results for 'sys.plan_persist_plan_feedback'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_feedback".
+DBCC results for 'sys.plan_persist_query_variant'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_variant".
+DBCC results for 'MSreplication_options'.
+There are 3 rows in 1 pages for object "MSreplication_options".
+CHECKDB found 0 allocation errors and 0 consistency errors in database 'master'.
+DBCC results for 'mssqlsystemresource'.
+Service Broker Msg 9675, State 1: Message Types analyzed: 14.
+Service Broker Msg 9676, State 1: Service Contracts analyzed: 6.
+Service Broker Msg 9667, State 1: Services analyzed: 3.
+Service Broker Msg 9668, State 1: Service Queues analyzed: 3.
+Service Broker Msg 9669, State 1: Conversation Endpoints analyzed: 0.
+Service Broker Msg 9674, State 1: Conversation Groups analyzed: 0.
+Service Broker Msg 9670, State 1: Remote Service Bindings analyzed: 0.
+Service Broker Msg 9605, State 1: Conversation Priorities analyzed: 0.
+DBCC results for 'sys.sysrscols'.
+There are 2077 rows in 25 pages for object "sys.sysrscols".
+DBCC results for 'sys.sysrowsets'.
+There are 260 rows in 4 pages for object "sys.sysrowsets".
+DBCC results for 'sys.sysclones'.
+There are 0 rows in 0 pages for object "sys.sysclones".
+DBCC results for 'sys.sysallocunits'.
+There are 322 rows in 4 pages for object "sys.sysallocunits".
+DBCC results for 'sys.sysfiles1'.
+There are 2 rows in 1 pages for object "sys.sysfiles1".
+DBCC results for 'sys.sysseobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysseobjvalues".
+DBCC results for 'sys.syspriorities'.
+There are 0 rows in 0 pages for object "sys.syspriorities".
+DBCC results for 'sys.sysdbfrag'.
+There are 0 rows in 0 pages for object "sys.sysdbfrag".
+DBCC results for 'sys.sysfgfrag'.
+There are 0 rows in 0 pages for object "sys.sysfgfrag".
+DBCC results for 'sys.sysdbfiles'.
+There are 2 rows in 1 pages for object "sys.sysdbfiles".
+DBCC results for 'sys.syspru'.
+There are 0 rows in 0 pages for object "sys.syspru".
+DBCC results for 'sys.sysbrickfiles'.
+There are 0 rows in 0 pages for object "sys.sysbrickfiles".
+DBCC results for 'sys.sysphfg'.
+There are 1 rows in 1 pages for object "sys.sysphfg".
+DBCC results for 'sys.sysprufiles'.
+There are 2 rows in 1 pages for object "sys.sysprufiles".
+DBCC results for 'sys.sysftinds'.
+There are 0 rows in 0 pages for object "sys.sysftinds".
+DBCC results for 'sys.sysowners'.
+There are 14 rows in 1 pages for object "sys.sysowners".
+DBCC results for 'sys.sysdbreg'.
+There are 0 rows in 0 pages for object "sys.sysdbreg".
+DBCC results for 'sys.sysprivs'.
+There are 123 rows in 1 pages for object "sys.sysprivs".
+DBCC results for 'sys.sysschobjs'.
+There are 4201 rows in 84 pages for object "sys.sysschobjs".
+DBCC results for 'sys.syscsrowgroups'.
+There are 0 rows in 0 pages for object "sys.syscsrowgroups".
+DBCC results for 'sys.sysextsources'.
+There are 0 rows in 0 pages for object "sys.sysextsources".
+DBCC results for 'sys.sysexttables'.
+There are 0 rows in 0 pages for object "sys.sysexttables".
+DBCC results for 'sys.sysextfileformats'.
+There are 0 rows in 0 pages for object "sys.sysextfileformats".
+DBCC results for 'sys.sysmultiobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysmultiobjvalues".
+DBCC results for 'sys.syscolpars'.
+There are 27823 rows in 528 pages for object "sys.syscolpars".
+DBCC results for 'sys.sysxlgns'.
+There are 0 rows in 0 pages for object "sys.sysxlgns".
+DBCC results for 'sys.sysxsrvs'.
+There are 0 rows in 0 pages for object "sys.sysxsrvs".
+DBCC results for 'sys.sysnsobjs'.
+There are 3 rows in 1 pages for object "sys.sysnsobjs".
+DBCC results for 'sys.sysusermsgs'.
+There are 0 rows in 0 pages for object "sys.sysusermsgs".
+DBCC results for 'sys.syscerts'.
+There are 5 rows in 4 pages for object "sys.syscerts".
+DBCC results for 'sys.sysrmtlgns'.
+There are 0 rows in 0 pages for object "sys.sysrmtlgns".
+DBCC results for 'sys.syslnklgns'.
+There are 0 rows in 0 pages for object "sys.syslnklgns".
+DBCC results for 'sys.sysxprops'.
+There are 0 rows in 0 pages for object "sys.sysxprops".
+DBCC results for 'sys.sysscalartypes'.
+There are 34 rows in 1 pages for object "sys.sysscalartypes".
+DBCC results for 'sys.systypedsubobjs'.
+There are 0 rows in 0 pages for object "sys.systypedsubobjs".
+DBCC results for 'sys.sysidxstats'.
+There are 1328 rows in 22 pages for object "sys.sysidxstats".
+DBCC results for 'sys.sysiscols'.
+There are 1463 rows in 9 pages for object "sys.sysiscols".
+DBCC results for 'sys.sysendpts'.
+There are 0 rows in 0 pages for object "sys.sysendpts".
+DBCC results for 'sys.syswebmethods'.
+There are 0 rows in 0 pages for object "sys.syswebmethods".
+DBCC results for 'sys.sysbinobjs'.
+There are 23 rows in 1 pages for object "sys.sysbinobjs".
+DBCC results for 'sys.sysaudacts'.
+There are 0 rows in 0 pages for object "sys.sysaudacts".
+DBCC results for 'sys.sysobjvalues'.
+There are 5371 rows in 1338 pages for object "sys.sysobjvalues".
+DBCC results for 'sys.syscscolsegments'.
+There are 0 rows in 0 pages for object "sys.syscscolsegments".
+DBCC results for 'sys.syscsdictionaries'.
+There are 0 rows in 0 pages for object "sys.syscsdictionaries".
+DBCC results for 'sys.sysclsobjs'.
+There are 31 rows in 1 pages for object "sys.sysclsobjs".
+DBCC results for 'sys.sysrowsetrefs'.
+There are 0 rows in 0 pages for object "sys.sysrowsetrefs".
+DBCC results for 'sys.sysremsvcbinds'.
+There are 0 rows in 0 pages for object "sys.sysremsvcbinds".
+DBCC results for 'sys.sysxmitqueue'.
+There are 0 rows in 0 pages for object "sys.sysxmitqueue".
+DBCC results for 'sys.sysrts'.
+There are 1 rows in 1 pages for object "sys.sysrts".
+DBCC results for 'sys.sysconvgroup'.
+There are 0 rows in 0 pages for object "sys.sysconvgroup".
+DBCC results for 'sys.sysdesend'.
+There are 0 rows in 0 pages for object "sys.sysdesend".
+DBCC results for 'sys.sysdercv'.
+There are 0 rows in 0 pages for object "sys.sysdercv".
+DBCC results for 'sys.syssingleobjrefs'.
+There are 6896 rows in 28 pages for object "sys.syssingleobjrefs".
+DBCC results for 'sys.sysmultiobjrefs'.
+There are 1231 rows in 7 pages for object "sys.sysmultiobjrefs".
+DBCC results for 'sys.sysguidrefs'.
+There are 4 rows in 1 pages for object "sys.sysguidrefs".
+DBCC results for 'sys.sysfoqueues'.
+There are 0 rows in 0 pages for object "sys.sysfoqueues".
+DBCC results for 'sys.syschildinsts'.
+There are 0 rows in 0 pages for object "sys.syschildinsts".
+DBCC results for 'sys.syscompfragments'.
+There are 0 rows in 0 pages for object "sys.syscompfragments".
+DBCC results for 'sys.sysftsemanticsdb'.
+There are 0 rows in 0 pages for object "sys.sysftsemanticsdb".
+DBCC results for 'sys.sysftstops'.
+There are 15829 rows in 121 pages for object "sys.sysftstops".
+DBCC results for 'sys.sysftproperties'.
+There are 0 rows in 0 pages for object "sys.sysftproperties".
+DBCC results for 'sys.sysxmitbody'.
+There are 0 rows in 0 pages for object "sys.sysxmitbody".
+DBCC results for 'sys.sysfos'.
+There are 0 rows in 0 pages for object "sys.sysfos".
+DBCC results for 'sys.sysqnames'.
+There are 1225 rows in 17 pages for object "sys.sysqnames".
+DBCC results for 'sys.sysxmlcomponent'.
+There are 6657 rows in 33 pages for object "sys.sysxmlcomponent".
+DBCC results for 'sys.sysxmlfacet'.
+There are 441 rows in 3 pages for object "sys.sysxmlfacet".
+DBCC results for 'sys.sysxmlplacement'.
+There are 11600 rows in 84 pages for object "sys.sysxmlplacement".
+DBCC results for 'sys.sysobjkeycrypts'.
+There are 887 rows in 68 pages for object "sys.sysobjkeycrypts".
+DBCC results for 'sys.sysasymkeys'.
+There are 0 rows in 0 pages for object "sys.sysasymkeys".
+DBCC results for 'sys.syssqlguides'.
+There are 0 rows in 0 pages for object "sys.syssqlguides".
+DBCC results for 'sys.sysbinsubobjs'.
+There are 3 rows in 1 pages for object "sys.sysbinsubobjs".
+DBCC results for 'sys.syssoftobjrefs'.
+There are 0 rows in 0 pages for object "sys.syssoftobjrefs".
+DBCC results for 'sys.sqlagent_jobs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobs".
+DBCC results for 'sys.sqlagent_jobsteps'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps".
+DBCC results for 'sys.sqlagent_job_history'.
+There are 0 rows in 0 pages for object "sys.sqlagent_job_history".
+DBCC results for 'sys.sqlagent_jobsteps_logs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps_logs".
+DBCC results for 'sys.plan_persist_query_text'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_text".
+DBCC results for 'sys.plan_persist_query'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query".
+DBCC results for 'sys.plan_persist_plan'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan".
+DBCC results for 'sys.plan_persist_runtime_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats".
+DBCC results for 'sys.plan_persist_runtime_stats_interval'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_interval".
+DBCC results for 'sys.plan_persist_context_settings'.
+There are 0 rows in 0 pages for object "sys.plan_persist_context_settings".
+DBCC results for 'sys.plan_persist_query_hints'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_hints".
+DBCC results for 'sys.plan_persist_query_template_parameterization'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_template_parameterization".
+DBCC results for 'sys.plan_persist_wait_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats".
+DBCC results for 'sys.persistent_version_store'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store".
+DBCC results for 'sys.persistent_version_store_long_term'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store_long_term".
+DBCC results for 'sys.db_ledger_blocks'.
+There are 0 rows in 0 pages for object "sys.db_ledger_blocks".
+DBCC results for 'sys.db_ledger_transactions'.
+There are 0 rows in 0 pages for object "sys.db_ledger_transactions".
+DBCC results for 'sys.backup_metadata_store'.
+There are 0 rows in 0 pages for object "sys.backup_metadata_store".
+DBCC results for 'sys.plan_persist_plan_feedback'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_feedback".
+DBCC results for 'sys.plan_persist_query_variant'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_variant".
+DBCC results for 'sys.plan_persist_replicas'.
+There are 0 rows in 0 pages for object "sys.plan_persist_replicas".
+DBCC results for 'sys.plan_persist_plan_forcing_locations'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_forcing_locations".
+DBCC results for 'sys.plan_persist_runtime_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_v2".
+DBCC results for 'sys.plan_persist_wait_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats_v2".
+DBCC results for 'sys.queue_messages_1977058079'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1977058079".
+DBCC results for 'sys.queue_messages_2009058193'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2009058193".
+DBCC results for 'sys.queue_messages_2041058307'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2041058307".
+DBCC results for 'sys.filestream_tombstone_2073058421'.
+There are 0 rows in 0 pages for object "sys.filestream_tombstone_2073058421".
+DBCC results for 'sys.syscommittab'.
+There are 0 rows in 0 pages for object "sys.syscommittab".
+DBCC results for 'sys.filetable_updates_2105058535'.
+There are 0 rows in 0 pages for object "sys.filetable_updates_2105058535".
+CHECKDB found 0 allocation errors and 0 consistency errors in database 'mssqlsystemresource'.
+DBCC execution completed. If DBCC printed error messages, contact your system administrator.
+DBCC results for 'model'.
+Service Broker Msg 9675, State 1: Message Types analyzed: 14.
+Service Broker Msg 9676, State 1: Service Contracts analyzed: 6.
+Service Broker Msg 9667, State 1: Services analyzed: 3.
+Service Broker Msg 9668, State 1: Service Queues analyzed: 3.
+Service Broker Msg 9669, State 1: Conversation Endpoints analyzed: 0.
+Service Broker Msg 9674, State 1: Conversation Groups analyzed: 0.
+Service Broker Msg 9670, State 1: Remote Service Bindings analyzed: 0.
+Service Broker Msg 9605, State 1: Conversation Priorities analyzed: 0.
+DBCC results for 'sys.sysrscols'.
+There are 1485 rows in 18 pages for object "sys.sysrscols".
+DBCC results for 'sys.sysrowsets'.
+There are 185 rows in 3 pages for object "sys.sysrowsets".
+DBCC results for 'sys.sysclones'.
+There are 0 rows in 0 pages for object "sys.sysclones".
+DBCC results for 'sys.sysallocunits'.
+There are 218 rows in 3 pages for object "sys.sysallocunits".
+DBCC results for 'sys.sysfiles1'.
+There are 2 rows in 1 pages for object "sys.sysfiles1".
+DBCC results for 'sys.sysseobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysseobjvalues".
+DBCC results for 'sys.syspriorities'.
+There are 0 rows in 0 pages for object "sys.syspriorities".
+DBCC results for 'sys.sysdbfrag'.
+There are 0 rows in 0 pages for object "sys.sysdbfrag".
+DBCC results for 'sys.sysfgfrag'.
+There are 0 rows in 0 pages for object "sys.sysfgfrag".
+DBCC results for 'sys.sysdbfiles'.
+There are 2 rows in 1 pages for object "sys.sysdbfiles".
+DBCC results for 'sys.syspru'.
+There are 0 rows in 0 pages for object "sys.syspru".
+DBCC results for 'sys.sysbrickfiles'.
+There are 0 rows in 0 pages for object "sys.sysbrickfiles".
+DBCC results for 'sys.sysphfg'.
+There are 1 rows in 1 pages for object "sys.sysphfg".
+DBCC results for 'sys.sysprufiles'.
+There are 2 rows in 1 pages for object "sys.sysprufiles".
+DBCC results for 'sys.sysftinds'.
+There are 0 rows in 0 pages for object "sys.sysftinds".
+DBCC results for 'sys.sysowners'.
+There are 14 rows in 1 pages for object "sys.sysowners".
+DBCC results for 'sys.sysdbreg'.
+There are 0 rows in 0 pages for object "sys.sysdbreg".
+DBCC results for 'sys.sysprivs'.
+There are 227 rows in 1 pages for object "sys.sysprivs".
+DBCC results for 'sys.sysschobjs'.
+There are 2774 rows in 46 pages for object "sys.sysschobjs".
+DBCC results for 'sys.syscsrowgroups'.
+There are 0 rows in 0 pages for object "sys.syscsrowgroups".
+DBCC results for 'sys.sysextsources'.
+There are 0 rows in 0 pages for object "sys.sysextsources".
+DBCC results for 'sys.sysexttables'.
+There are 0 rows in 0 pages for object "sys.sysexttables".
+DBCC results for 'sys.sysextfileformats'.
+There are 0 rows in 0 pages for object "sys.sysextfileformats".
+DBCC results for 'sys.sysmultiobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysmultiobjvalues".
+DBCC results for 'sys.syscolpars'.
+There are 1221 rows in 24 pages for object "sys.syscolpars".
+DBCC results for 'sys.sysxlgns'.
+There are 0 rows in 0 pages for object "sys.sysxlgns".
+DBCC results for 'sys.sysxsrvs'.
+There are 0 rows in 0 pages for object "sys.sysxsrvs".
+DBCC results for 'sys.sysnsobjs'.
+There are 1 rows in 1 pages for object "sys.sysnsobjs".
+DBCC results for 'sys.sysusermsgs'.
+There are 0 rows in 0 pages for object "sys.sysusermsgs".
+DBCC results for 'sys.syscerts'.
+There are 0 rows in 0 pages for object "sys.syscerts".
+DBCC results for 'sys.sysrmtlgns'.
+There are 0 rows in 0 pages for object "sys.sysrmtlgns".
+DBCC results for 'sys.syslnklgns'.
+There are 0 rows in 0 pages for object "sys.syslnklgns".
+DBCC results for 'sys.sysxprops'.
+There are 0 rows in 0 pages for object "sys.sysxprops".
+DBCC results for 'sys.sysscalartypes'.
+There are 34 rows in 1 pages for object "sys.sysscalartypes".
+DBCC results for 'sys.systypedsubobjs'.
+There are 0 rows in 0 pages for object "sys.systypedsubobjs".
+DBCC results for 'sys.sysidxstats'.
+There are 205 rows in 4 pages for object "sys.sysidxstats".
+DBCC results for 'sys.sysiscols'.
+There are 431 rows in 2 pages for object "sys.sysiscols".
+DBCC results for 'sys.sysendpts'.
+There are 0 rows in 0 pages for object "sys.sysendpts".
+DBCC results for 'sys.syswebmethods'.
+There are 0 rows in 0 pages for object "sys.syswebmethods".
+DBCC results for 'sys.sysbinobjs'.
+There are 23 rows in 1 pages for object "sys.sysbinobjs".
+DBCC results for 'sys.sysaudacts'.
+There are 0 rows in 0 pages for object "sys.sysaudacts".
+DBCC results for 'sys.sysobjvalues'.
+There are 245 rows in 14 pages for object "sys.sysobjvalues".
+DBCC results for 'sys.syscscolsegments'.
+There are 0 rows in 0 pages for object "sys.syscscolsegments".
+DBCC results for 'sys.syscsdictionaries'.
+There are 0 rows in 0 pages for object "sys.syscsdictionaries".
+DBCC results for 'sys.sysclsobjs'.
+There are 26 rows in 1 pages for object "sys.sysclsobjs".
+DBCC results for 'sys.sysrowsetrefs'.
+There are 0 rows in 0 pages for object "sys.sysrowsetrefs".
+DBCC results for 'sys.sysremsvcbinds'.
+There are 0 rows in 0 pages for object "sys.sysremsvcbinds".
+DBCC results for 'sys.sysxmitqueue'.
+There are 0 rows in 0 pages for object "sys.sysxmitqueue".
+DBCC results for 'sys.sysrts'.
+There are 1 rows in 1 pages for object "sys.sysrts".
+DBCC results for 'sys.sysconvgroup'.
+There are 0 rows in 0 pages for object "sys.sysconvgroup".
+DBCC results for 'sys.sysdesend'.
+There are 0 rows in 0 pages for object "sys.sysdesend".
+DBCC results for 'sys.sysdercv'.
+There are 0 rows in 0 pages for object "sys.sysdercv".
+DBCC results for 'sys.syssingleobjrefs'.
+There are 197 rows in 1 pages for object "sys.syssingleobjrefs".
+DBCC results for 'sys.sysmultiobjrefs'.
+There are 107 rows in 1 pages for object "sys.sysmultiobjrefs".
+DBCC results for 'sys.sysguidrefs'.
+There are 0 rows in 0 pages for object "sys.sysguidrefs".
+DBCC results for 'sys.sysfoqueues'.
+There are 0 rows in 0 pages for object "sys.sysfoqueues".
+DBCC results for 'sys.syschildinsts'.
+There are 0 rows in 0 pages for object "sys.syschildinsts".
+DBCC results for 'sys.syscompfragments'.
+There are 0 rows in 0 pages for object "sys.syscompfragments".
+DBCC results for 'sys.sysftsemanticsdb'.
+There are 0 rows in 0 pages for object "sys.sysftsemanticsdb".
+DBCC results for 'sys.sysftstops'.
+There are 0 rows in 0 pages for object "sys.sysftstops".
+DBCC results for 'sys.sysftproperties'.
+There are 0 rows in 0 pages for object "sys.sysftproperties".
+DBCC results for 'sys.sysxmitbody'.
+There are 0 rows in 0 pages for object "sys.sysxmitbody".
+DBCC results for 'sys.sysfos'.
+There are 0 rows in 0 pages for object "sys.sysfos".
+DBCC results for 'sys.sysqnames'.
+There are 98 rows in 1 pages for object "sys.sysqnames".
+DBCC results for 'sys.sysxmlcomponent'.
+There are 100 rows in 1 pages for object "sys.sysxmlcomponent".
+DBCC results for 'sys.sysxmlfacet'.
+There are 112 rows in 1 pages for object "sys.sysxmlfacet".
+DBCC results for 'sys.sysxmlplacement'.
+There are 19 rows in 1 pages for object "sys.sysxmlplacement".
+DBCC results for 'sys.sysobjkeycrypts'.
+There are 0 rows in 0 pages for object "sys.sysobjkeycrypts".
+DBCC results for 'sys.sysasymkeys'.
+There are 0 rows in 0 pages for object "sys.sysasymkeys".
+DBCC results for 'sys.syssqlguides'.
+There are 0 rows in 0 pages for object "sys.syssqlguides".
+DBCC results for 'sys.sysbinsubobjs'.
+There are 3 rows in 1 pages for object "sys.sysbinsubobjs".
+DBCC results for 'sys.syssoftobjrefs'.
+There are 0 rows in 0 pages for object "sys.syssoftobjrefs".
+DBCC results for 'sys.sqlagent_jobs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobs".
+DBCC results for 'sys.sqlagent_jobsteps'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps".
+DBCC results for 'sys.sqlagent_job_history'.
+There are 0 rows in 0 pages for object "sys.sqlagent_job_history".
+DBCC results for 'sys.sqlagent_jobsteps_logs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps_logs".
+DBCC results for 'sys.plan_persist_query_text'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_text".
+DBCC results for 'sys.plan_persist_query'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query".
+DBCC results for 'sys.plan_persist_plan'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan".
+DBCC results for 'sys.plan_persist_runtime_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats".
+DBCC results for 'sys.plan_persist_runtime_stats_interval'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_interval".
+DBCC results for 'sys.plan_persist_context_settings'.
+There are 0 rows in 0 pages for object "sys.plan_persist_context_settings".
+DBCC results for 'sys.plan_persist_query_hints'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_hints".
+DBCC results for 'sys.plan_persist_query_template_parameterization'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_template_parameterization".
+DBCC results for 'sys.plan_persist_wait_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats".
+DBCC results for 'sys.persistent_version_store'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store".
+DBCC results for 'sys.persistent_version_store_long_term'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store_long_term".
+DBCC results for 'sys.db_ledger_blocks'.
+There are 0 rows in 0 pages for object "sys.db_ledger_blocks".
+DBCC results for 'sys.db_ledger_transactions'.
+There are 0 rows in 0 pages for object "sys.db_ledger_transactions".
+DBCC results for 'sys.backup_metadata_store'.
+There are 0 rows in 0 pages for object "sys.backup_metadata_store".
+DBCC results for 'sys.plan_persist_plan_feedback'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_feedback".
+DBCC results for 'sys.plan_persist_query_variant'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_variant".
+DBCC results for 'sys.ledger_tables_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal".
+DBCC results for 'sys.ledger_tables_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal_history".
+DBCC results for 'sys.ledger_columns_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal".
+DBCC results for 'sys.ledger_columns_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal_history".
+DBCC results for 'sys.db_ledger_digest_locations'.
+There are 0 rows in 0 pages for object "sys.db_ledger_digest_locations".
+DBCC results for 'sys.plan_persist_replicas'.
+There are 0 rows in 0 pages for object "sys.plan_persist_replicas".
+DBCC results for 'sys.plan_persist_plan_forcing_locations'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_forcing_locations".
+DBCC results for 'sys.plan_persist_runtime_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_v2".
+DBCC results for 'sys.plan_persist_wait_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats_v2".
+DBCC results for 'sys.queue_messages_1977058079'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1977058079".
+DBCC results for 'sys.queue_messages_2009058193'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2009058193".
+DBCC results for 'sys.queue_messages_2041058307'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2041058307".
+DBCC results for 'sys.filestream_tombstone_2073058421'.
+There are 0 rows in 0 pages for object "sys.filestream_tombstone_2073058421".
+DBCC results for 'sys.syscommittab'.
+There are 0 rows in 0 pages for object "sys.syscommittab".
+DBCC results for 'sys.filetable_updates_2105058535'.
+There are 0 rows in 0 pages for object "sys.filetable_updates_2105058535".
+CHECKDB found 0 allocation errors and 0 consistency errors in database 'model'.
+DBCC execution completed. If DBCC printed error messages, contact your system administrator.
+DBCC results for 'msdb'.
+Service Broker Msg 9675, State 1: Message Types analyzed: 16.
+Service Broker Msg 9676, State 1: Service Contracts analyzed: 7.
+Service Broker Msg 9667, State 1: Services analyzed: 6.
+Service Broker Msg 9668, State 1: Service Queues analyzed: 6.
+Service Broker Msg 9669, State 1: Conversation Endpoints analyzed: 0.
+Service Broker Msg 9674, State 1: Conversation Groups analyzed: 0.
+Service Broker Msg 9670, State 1: Remote Service Bindings analyzed: 0.
+Service Broker Msg 9605, State 1: Conversation Priorities analyzed: 0.
+DBCC results for 'sys.sysrscols'.
+There are 3110 rows in 34 pages for object "sys.sysrscols".
+DBCC results for 'sys.sysrowsets'.
+There are 421 rows in 5 pages for object "sys.sysrowsets".
+DBCC results for 'sys.sysclones'.
+There are 0 rows in 0 pages for object "sys.sysclones".
+DBCC results for 'sys.sysallocunits'.
+There are 531 rows in 6 pages for object "sys.sysallocunits".
+DBCC results for 'sys.sysfiles1'.
+There are 2 rows in 1 pages for object "sys.sysfiles1".
+DBCC results for 'sys.sysseobjvalues'.
+There are 1 rows in 1 pages for object "sys.sysseobjvalues".
+DBCC results for 'sys.syspriorities'.
+There are 0 rows in 0 pages for object "sys.syspriorities".
+DBCC results for 'sys.sysdbfrag'.
+There are 0 rows in 0 pages for object "sys.sysdbfrag".
+DBCC results for 'sys.sysfgfrag'.
+There are 0 rows in 0 pages for object "sys.sysfgfrag".
+DBCC results for 'sys.sysdbfiles'.
+There are 2 rows in 1 pages for object "sys.sysdbfiles".
+DBCC results for 'sys.syspru'.
+There are 0 rows in 0 pages for object "sys.syspru".
+DBCC results for 'sys.sysbrickfiles'.
+There are 0 rows in 0 pages for object "sys.sysbrickfiles".
+DBCC results for 'sys.sysphfg'.
+There are 1 rows in 1 pages for object "sys.sysphfg".
+DBCC results for 'sys.sysprufiles'.
+There are 2 rows in 1 pages for object "sys.sysprufiles".
+DBCC results for 'sys.sysftinds'.
+There are 0 rows in 0 pages for object "sys.sysftinds".
+DBCC results for 'sys.sysowners'.
+There are 34 rows in 1 pages for object "sys.sysowners".
+DBCC results for 'sys.sysdbreg'.
+There are 0 rows in 0 pages for object "sys.sysdbreg".
+DBCC results for 'sys.sysprivs'.
+There are 613 rows in 4 pages for object "sys.sysprivs".
+DBCC results for 'sys.sysschobjs'.
+There are 3993 rows in 72 pages for object "sys.sysschobjs".
+DBCC results for 'sys.syscsrowgroups'.
+There are 0 rows in 0 pages for object "sys.syscsrowgroups".
+DBCC results for 'sys.sysextsources'.
+There are 0 rows in 0 pages for object "sys.sysextsources".
+DBCC results for 'sys.sysexttables'.
+There are 0 rows in 0 pages for object "sys.sysexttables".
+DBCC results for 'sys.sysextfileformats'.
+There are 0 rows in 0 pages for object "sys.sysextfileformats".
+DBCC results for 'sys.sysmultiobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysmultiobjvalues".
+DBCC results for 'sys.syscolpars'.
+There are 5610 rows in 114 pages for object "sys.syscolpars".
+DBCC results for 'sys.sysxlgns'.
+There are 0 rows in 0 pages for object "sys.sysxlgns".
+DBCC results for 'sys.sysxsrvs'.
+There are 0 rows in 0 pages for object "sys.sysxsrvs".
+DBCC results for 'sys.sysnsobjs'.
+There are 5 rows in 1 pages for object "sys.sysnsobjs".
+DBCC results for 'sys.sysusermsgs'.
+There are 0 rows in 0 pages for object "sys.sysusermsgs".
+DBCC results for 'sys.syscerts'.
+There are 2 rows in 1 pages for object "sys.syscerts".
+DBCC results for 'sys.sysrmtlgns'.
+There are 0 rows in 0 pages for object "sys.sysrmtlgns".
+DBCC results for 'sys.syslnklgns'.
+There are 0 rows in 0 pages for object "sys.syslnklgns".
+DBCC results for 'sys.sysxprops'.
+There are 1 rows in 1 pages for object "sys.sysxprops".
+DBCC results for 'sys.sysscalartypes'.
+There are 35 rows in 1 pages for object "sys.sysscalartypes".
+DBCC results for 'sys.systypedsubobjs'.
+There are 0 rows in 0 pages for object "sys.systypedsubobjs".
+DBCC results for 'sys.sysidxstats'.
+There are 548 rows in 13 pages for object "sys.sysidxstats".
+DBCC results for 'sys.sysiscols'.
+There are 866 rows in 6 pages for object "sys.sysiscols".
+DBCC results for 'sys.sysendpts'.
+There are 0 rows in 0 pages for object "sys.sysendpts".
+DBCC results for 'sys.syswebmethods'.
+There are 0 rows in 0 pages for object "sys.syswebmethods".
+DBCC results for 'sys.sysbinobjs'.
+There are 29 rows in 1 pages for object "sys.sysbinobjs".
+DBCC results for 'sys.sysaudacts'.
+There are 0 rows in 0 pages for object "sys.sysaudacts".
+DBCC results for 'sys.sysobjvalues'.
+There are 1495 rows in 305 pages for object "sys.sysobjvalues".
+DBCC results for 'sys.syscscolsegments'.
+There are 0 rows in 0 pages for object "sys.syscscolsegments".
+DBCC results for 'sys.syscsdictionaries'.
+There are 0 rows in 0 pages for object "sys.syscsdictionaries".
+DBCC results for 'sys.sysclsobjs'.
+There are 36 rows in 1 pages for object "sys.sysclsobjs".
+DBCC results for 'sys.sysrowsetrefs'.
+There are 0 rows in 0 pages for object "sys.sysrowsetrefs".
+DBCC results for 'sys.sysremsvcbinds'.
+There are 0 rows in 0 pages for object "sys.sysremsvcbinds".
+DBCC results for 'sys.sysxmitqueue'.
+There are 0 rows in 0 pages for object "sys.sysxmitqueue".
+DBCC results for 'sys.sysrts'.
+There are 1 rows in 1 pages for object "sys.sysrts".
+DBCC results for 'sys.sysconvgroup'.
+There are 0 rows in 0 pages for object "sys.sysconvgroup".
+DBCC results for 'sys.sysdesend'.
+There are 0 rows in 0 pages for object "sys.sysdesend".
+DBCC results for 'sys.sysdercv'.
+There are 0 rows in 0 pages for object "sys.sysdercv".
+DBCC results for 'sys.syssingleobjrefs'.
+There are 701 rows in 6 pages for object "sys.syssingleobjrefs".
+DBCC results for 'sys.sysmultiobjrefs'.
+There are 4836 rows in 32 pages for object "sys.sysmultiobjrefs".
+DBCC results for 'sys.sysguidrefs'.
+There are 0 rows in 0 pages for object "sys.sysguidrefs".
+DBCC results for 'sys.sysfoqueues'.
+There are 0 rows in 0 pages for object "sys.sysfoqueues".
+DBCC results for 'sys.syschildinsts'.
+There are 0 rows in 0 pages for object "sys.syschildinsts".
+DBCC results for 'sys.syscompfragments'.
+There are 0 rows in 0 pages for object "sys.syscompfragments".
+DBCC results for 'sys.sysftsemanticsdb'.
+There are 0 rows in 0 pages for object "sys.sysftsemanticsdb".
+DBCC results for 'sys.sysftstops'.
+There are 0 rows in 0 pages for object "sys.sysftstops".
+DBCC results for 'sys.sysftproperties'.
+There are 0 rows in 0 pages for object "sys.sysftproperties".
+DBCC results for 'sys.sysxmitbody'.
+There are 0 rows in 0 pages for object "sys.sysxmitbody".
+DBCC results for 'sys.sysfos'.
+There are 0 rows in 0 pages for object "sys.sysfos".
+DBCC results for 'sys.sysqnames'.
+There are 130 rows in 1 pages for object "sys.sysqnames".
+DBCC results for 'sys.sysxmlcomponent'.
+There are 156 rows in 1 pages for object "sys.sysxmlcomponent".
+DBCC results for 'sys.sysxmlfacet'.
+There are 112 rows in 1 pages for object "sys.sysxmlfacet".
+DBCC results for 'sys.sysxmlplacement'.
+There are 92 rows in 1 pages for object "sys.sysxmlplacement".
+DBCC results for 'sys.sysobjkeycrypts'.
+There are 401 rows in 78 pages for object "sys.sysobjkeycrypts".
+DBCC results for 'sys.sysasymkeys'.
+There are 0 rows in 0 pages for object "sys.sysasymkeys".
+DBCC results for 'sys.syssqlguides'.
+There are 0 rows in 0 pages for object "sys.syssqlguides".
+DBCC results for 'sys.sysbinsubobjs'.
+There are 3 rows in 1 pages for object "sys.sysbinsubobjs".
+DBCC results for 'sys.syssoftobjrefs'.
+There are 1882 rows in 34 pages for object "sys.syssoftobjrefs".
+DBCC results for 'sysnotifications'.
+There are 0 rows in 0 pages for object "sysnotifications".
+DBCC results for 'sysutility_ucp_snapshot_partitions_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_snapshot_partitions_internal".
+DBCC results for 'systaskids'.
+There are 0 rows in 0 pages for object "systaskids".
+DBCC results for 'sysutility_mi_dac_execution_statistics_internal'.
+There are 0 rows in 0 pages for object "sysutility_mi_dac_execution_statistics_internal".
+DBCC results for 'syscachedcredentials'.
+There are 0 rows in 0 pages for object "syscachedcredentials".
+DBCC results for 'syscollector_blobs_internal'.
+There are 1 rows in 1 pages for object "syscollector_blobs_internal".
+DBCC results for 'syspolicy_system_health_state_internal'.
+There are 0 rows in 0 pages for object "syspolicy_system_health_state_internal".
+DBCC results for 'sysutility_mi_session_statistics_internal'.
+There are 0 rows in 0 pages for object "sysutility_mi_session_statistics_internal".
+DBCC results for 'sysutility_mi_volumes_stage_internal'.
+There are 0 rows in 0 pages for object "sysutility_mi_volumes_stage_internal".
+DBCC results for 'syscollector_tsql_query_collector'.
+There are 0 rows in 0 pages for object "syscollector_tsql_query_collector".
+DBCC results for 'sys.sqlagent_jobs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobs".
+DBCC results for 'sys.sqlagent_jobsteps'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps".
+DBCC results for 'sysutility_ucp_aggregated_dac_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_aggregated_dac_health_internal".
+DBCC results for 'syspolicy_policy_execution_history_internal'.
+There are 0 rows in 0 pages for object "syspolicy_policy_execution_history_internal".
+DBCC results for 'sys.sqlagent_job_history'.
+There are 0 rows in 0 pages for object "sys.sqlagent_job_history".
+DBCC results for 'sys.sqlagent_jobsteps_logs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps_logs".
+DBCC results for 'sys.plan_persist_query_text'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_text".
+DBCC results for 'sysutility_mi_cpu_stage_internal'.
+There are 0 rows in 0 pages for object "sysutility_mi_cpu_stage_internal".
+DBCC results for 'sys.plan_persist_query'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query".
+DBCC results for 'sys.plan_persist_plan'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan".
+DBCC results for 'sysmanagement_shared_server_groups_internal'.
+There are 5 rows in 1 pages for object "sysmanagement_shared_server_groups_internal".
+DBCC results for 'sys.plan_persist_runtime_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats".
+DBCC results for 'sys.plan_persist_runtime_stats_interval'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_interval".
+DBCC results for 'sysssispackages'.
+There are 8 rows in 1 pages for object "sysssispackages".
+DBCC results for 'sys.plan_persist_context_settings'.
+There are 0 rows in 0 pages for object "sys.plan_persist_context_settings".
+DBCC results for 'syspolicy_policy_execution_history_details_internal'.
+There are 0 rows in 0 pages for object "syspolicy_policy_execution_history_details_internal".
+DBCC results for 'sys.plan_persist_query_hints'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_hints".
+DBCC results for 'sys.plan_persist_query_template_parameterization'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_template_parameterization".
+DBCC results for 'sysmanagement_shared_registered_servers_internal'.
+There are 0 rows in 0 pages for object "sysmanagement_shared_registered_servers_internal".
+DBCC results for 'sys.plan_persist_wait_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats".
+DBCC results for 'sys.persistent_version_store'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store".
+DBCC results for 'sysssispackagefolders'.
+There are 4 rows in 1 pages for object "sysssispackagefolders".
+DBCC results for 'sys.persistent_version_store_long_term'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store_long_term".
+DBCC results for 'sys.db_ledger_blocks'.
+There are 0 rows in 0 pages for object "sys.db_ledger_blocks".
+DBCC results for 'sys.db_ledger_transactions'.
+There are 0 rows in 0 pages for object "sys.db_ledger_transactions".
+DBCC results for 'sysssislog'.
+There are 0 rows in 0 pages for object "sysssislog".
+DBCC results for 'sysutility_ucp_aggregated_mi_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_aggregated_mi_health_internal".
+DBCC results for 'sys.backup_metadata_store'.
+There are 0 rows in 0 pages for object "sys.backup_metadata_store".
+DBCC results for 'sys.plan_persist_plan_feedback'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_feedback".
+DBCC results for 'sys.plan_persist_query_variant'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_variant".
+DBCC results for 'syspolicy_execution_internal'.
+There are 0 rows in 0 pages for object "syspolicy_execution_internal".
+DBCC results for 'sysutility_mi_smo_stage_internal'.
+There are 0 rows in 0 pages for object "sysutility_mi_smo_stage_internal".
+DBCC results for 'sysutility_mi_smo_objects_to_collect_internal'.
+There are 5 rows in 1 pages for object "sysutility_mi_smo_objects_to_collect_internal".
+DBCC results for 'sysutility_mi_smo_properties_to_collect_internal'.
+There are 84 rows in 1 pages for object "sysutility_mi_smo_properties_to_collect_internal".
+DBCC results for 'syspolicy_configuration_internal'.
+There are 4 rows in 1 pages for object "syspolicy_configuration_internal".
+DBCC results for 'log_shipping_primary_databases'.
+There are 0 rows in 0 pages for object "log_shipping_primary_databases".
+DBCC results for 'syspolicy_management_facets'.
+There are 96 rows in 1 pages for object "syspolicy_management_facets".
+DBCC results for 'sys.wpr_bucket_table'.
+There are 0 rows in 0 pages for object "sys.wpr_bucket_table".
+DBCC results for 'msdb_version'.
+There are 1 rows in 1 pages for object "msdb_version".
+DBCC results for 'syspolicy_facet_events'.
+There are 100 rows in 4 pages for object "syspolicy_facet_events".
+DBCC results for 'syscollector_config_store_internal'.
+There are 5 rows in 1 pages for object "syscollector_config_store_internal".
+DBCC results for 'sysutility_ucp_dac_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_dac_health_internal".
+DBCC results for 'sysmail_profile'.
+There are 0 rows in 0 pages for object "sysmail_profile".
+DBCC results for 'MSdbms'.
+There are 8 rows in 1 pages for object "MSdbms".
+DBCC results for 'log_shipping_primary_backupserver'.
+There are 0 rows in 0 pages for object "log_shipping_primary_backupserver".
+DBCC results for 'syspolicy_conditions_internal'.
+There are 17 rows in 7 pages for object "syspolicy_conditions_internal".
+DBCC results for 'MSdbms_datatype'.
+There are 180 rows in 2 pages for object "MSdbms_datatype".
+DBCC results for 'log_shipping_primary_secondaries'.
+There are 0 rows in 0 pages for object "log_shipping_primary_secondaries".
+DBCC results for 'log_shipping_monitor_primary'.
+There are 0 rows in 0 pages for object "log_shipping_monitor_primary".
+DBCC results for 'sysmail_principalprofile'.
+There are 0 rows in 0 pages for object "sysmail_principalprofile".
+DBCC results for 'MSdbms_map'.
+There are 374 rows in 5 pages for object "MSdbms_map".
+DBCC results for 'log_shipping_monitor_history_detail'.
+There are 0 rows in 0 pages for object "log_shipping_monitor_history_detail".
+DBCC results for 'log_shipping_monitor_error_detail'.
+There are 0 rows in 0 pages for object "log_shipping_monitor_error_detail".
+DBCC results for 'sysutility_ucp_supported_object_types_internal'.
+There are 8 rows in 1 pages for object "sysutility_ucp_supported_object_types_internal".
+DBCC results for 'log_shipping_secondary'.
+There are 0 rows in 0 pages for object "log_shipping_secondary".
+DBCC results for 'sysmaintplan_subplans'.
+There are 0 rows in 0 pages for object "sysmaintplan_subplans".
+DBCC results for 'sysutility_ucp_managed_instances_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_managed_instances_internal".
+DBCC results for 'log_shipping_secondary_databases'.
+There are 0 rows in 0 pages for object "log_shipping_secondary_databases".
+DBCC results for 'sysmail_account'.
+There are 0 rows in 0 pages for object "sysmail_account".
+DBCC results for 'log_shipping_monitor_secondary'.
+There are 0 rows in 0 pages for object "log_shipping_monitor_secondary".
+DBCC results for 'sysutility_ucp_mi_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_mi_health_internal".
+DBCC results for 'sysdac_instances_internal'.
+There are 0 rows in 0 pages for object "sysdac_instances_internal".
+DBCC results for 'log_shipping_monitor_alert'.
+There are 0 rows in 0 pages for object "log_shipping_monitor_alert".
+DBCC results for 'syscollector_collection_sets_internal'.
+There are 4 rows in 1 pages for object "syscollector_collection_sets_internal".
+DBCC results for 'sysmaintplan_log'.
+There are 0 rows in 0 pages for object "sysmaintplan_log".
+DBCC results for 'sysmail_profileaccount'.
+There are 0 rows in 0 pages for object "sysmail_profileaccount".
+DBCC results for 'sysutility_ucp_processing_state_internal'.
+There are 1 rows in 1 pages for object "sysutility_ucp_processing_state_internal".
+DBCC results for 'syspolicy_policy_categories_internal'.
+There are 10 rows in 1 pages for object "syspolicy_policy_categories_internal".
+DBCC results for 'sysdac_history_internal'.
+There are 0 rows in 0 pages for object "sysdac_history_internal".
+DBCC results for 'MSdbms_datatype_mapping'.
+There are 493 rows in 4 pages for object "MSdbms_datatype_mapping".
+DBCC results for 'sysmaintplan_logdetail'.
+There are 0 rows in 0 pages for object "sysmaintplan_logdetail".
+DBCC results for 'sysmail_servertype'.
+There are 1 rows in 1 pages for object "sysmail_servertype".
+DBCC results for 'syspolicy_object_sets_internal'.
+There are 16 rows in 1 pages for object "syspolicy_object_sets_internal".
+DBCC results for 'sysutility_ucp_health_policies_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_health_policies_internal".
+DBCC results for 'sysmail_server'.
+There are 0 rows in 0 pages for object "sysmail_server".
+DBCC results for 'sys.ledger_tables_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal".
+DBCC results for 'sysutility_ucp_filegroups_with_policy_violations_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_filegroups_with_policy_violations_internal".
+DBCC results for 'sys.ledger_tables_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal_history".
+DBCC results for 'sysutility_ucp_policy_check_conditions_internal'.
+There are 12 rows in 1 pages for object "sysutility_ucp_policy_check_conditions_internal".
+DBCC results for 'sys.ledger_columns_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal".
+DBCC results for 'sysdbmaintplans'.
+There are 1 rows in 1 pages for object "sysdbmaintplans".
+DBCC results for 'sys.ledger_columns_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal_history".
+DBCC results for 'syscollector_collector_types_internal'.
+There are 4 rows in 2 pages for object "syscollector_collector_types_internal".
+DBCC results for 'syspolicy_policies_internal'.
+There are 16 rows in 1 pages for object "syspolicy_policies_internal".
+DBCC results for 'sys.db_ledger_digest_locations'.
+There are 0 rows in 0 pages for object "sys.db_ledger_digest_locations".
+DBCC results for 'sysutility_ucp_policy_target_conditions_internal'.
+There are 24 rows in 1 pages for object "sysutility_ucp_policy_target_conditions_internal".
+DBCC results for 'sys.plan_persist_replicas'.
+There are 0 rows in 0 pages for object "sys.plan_persist_replicas".
+DBCC results for 'sys.plan_persist_plan_forcing_locations'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_forcing_locations".
+DBCC results for 'sys.plan_persist_runtime_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats_v2".
+DBCC results for 'sysutility_ucp_policy_violations_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_policy_violations_internal".
+DBCC results for 'sysmail_configuration'.
+There are 7 rows in 1 pages for object "sysmail_configuration".
+DBCC results for 'sys.plan_persist_wait_stats_v2'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats_v2".
+DBCC results for 'sys.corrupted_pages'.
+There are 0 rows in 0 pages for object "sys.corrupted_pages".
+DBCC results for 'sysdbmaintplan_jobs'.
+There are 0 rows in 0 pages for object "sysdbmaintplan_jobs".
+DBCC results for 'sysmail_mailitems'.
+There are 0 rows in 0 pages for object "sysmail_mailitems".
+DBCC results for 'external_libraries_installed'.
+There are 0 rows in 0 pages for object "external_libraries_installed".
+DBCC results for 'sysdbmaintplan_databases'.
+There are 0 rows in 0 pages for object "sysdbmaintplan_databases".
+DBCC results for 'sysutility_ucp_configuration_internal'.
+There are 13 rows in 1 pages for object "sysutility_ucp_configuration_internal".
+DBCC results for 'sysproxies'.
+There are 0 rows in 0 pages for object "sysproxies".
+DBCC results for 'syscollector_collection_items_internal'.
+There are 6 rows in 2 pages for object "syscollector_collection_items_internal".
+DBCC results for 'sysdbmaintplan_history'.
+There are 0 rows in 0 pages for object "sysdbmaintplan_history".
+DBCC results for 'sysproxysubsystem'.
+There are 0 rows in 0 pages for object "sysproxysubsystem".
+DBCC results for 'sysproxylogin'.
+There are 0 rows in 0 pages for object "sysproxylogin".
+DBCC results for 'sqlagent_info'.
+There are 0 rows in 0 pages for object "sqlagent_info".
+DBCC results for 'sysdownloadlist'.
+There are 0 rows in 0 pages for object "sysdownloadlist".
+DBCC results for 'sysjobhistory'.
+There are 0 rows in 0 pages for object "sysjobhistory".
+DBCC results for 'sysoriginatingservers'.
+There are 0 rows in 0 pages for object "sysoriginatingservers".
+DBCC results for 'dm_hadr_automatic_seeding_history'.
+There are 0 rows in 0 pages for object "dm_hadr_automatic_seeding_history".
+DBCC results for 'syssubsystems'.
+There are 11 rows in 1 pages for object "syssubsystems".
+DBCC results for 'autoadmin_task_agents'.
+There are 1 rows in 1 pages for object "autoadmin_task_agents".
+DBCC results for 'sysmail_attachments'.
+There are 0 rows in 0 pages for object "sysmail_attachments".
+DBCC results for 'sys.queue_messages_1542296554'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1542296554".
+DBCC results for 'autoadmin_managed_databases'.
+There are 0 rows in 0 pages for object "autoadmin_managed_databases".
+DBCC results for 'sysjobs'.
+There are 1 rows in 1 pages for object "sysjobs".
+DBCC results for 'sys.queue_messages_1574296668'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1574296668".
+DBCC results for 'backupmediaset'.
+There are 0 rows in 0 pages for object "backupmediaset".
+DBCC results for 'autoadmin_task_agent_metadata'.
+There are 1 rows in 1 pages for object "autoadmin_task_agent_metadata".
+DBCC results for 'sysmail_send_retries'.
+There are 0 rows in 0 pages for object "sysmail_send_retries".
+DBCC results for 'sysjobservers'.
+There are 1 rows in 1 pages for object "sysjobservers".
+DBCC results for 'backupmediafamily'.
+There are 0 rows in 0 pages for object "backupmediafamily".
+DBCC results for 'sys.queue_messages_1622296839'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1622296839".
+DBCC results for 'syssessions'.
+There are 2 rows in 1 pages for object "syssessions".
+DBCC results for 'syscollector_execution_log_internal'.
+There are 0 rows in 0 pages for object "syscollector_execution_log_internal".
+DBCC results for 'smart_backup_files'.
+There are 0 rows in 0 pages for object "smart_backup_files".
+DBCC results for 'sysjobactivity'.
+There are 2 rows in 1 pages for object "sysjobactivity".
+DBCC results for 'backupset'.
+There are 0 rows in 0 pages for object "backupset".
+DBCC results for 'sysmail_log'.
+There are 0 rows in 0 pages for object "sysmail_log".
+DBCC results for 'sysutility_ucp_dacs_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_dacs_stub".
+DBCC results for 'sysutility_ucp_volumes_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_volumes_stub".
+DBCC results for 'autoadmin_system_flags'.
+There are 0 rows in 0 pages for object "autoadmin_system_flags".
+DBCC results for 'sysjobsteps'.
+There are 3 rows in 1 pages for object "sysjobsteps".
+DBCC results for 'sysutility_ucp_computers_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_computers_stub".
+DBCC results for 'syscollector_execution_stats_internal'.
+There are 0 rows in 0 pages for object "syscollector_execution_stats_internal".
+DBCC results for 'autoadmin_master_switch'.
+There are 0 rows in 0 pages for object "autoadmin_master_switch".
+DBCC results for 'backupfilegroup'.
+There are 0 rows in 0 pages for object "backupfilegroup".
+DBCC results for 'sysjobstepslogs'.
+There are 0 rows in 0 pages for object "sysjobstepslogs".
+DBCC results for 'sysutility_ucp_smo_servers_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_smo_servers_stub".
+DBCC results for 'sysutility_ucp_databases_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_databases_stub".
+DBCC results for 'sysutility_ucp_mi_file_space_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_mi_file_space_health_internal".
+DBCC results for 'syspolicy_target_sets_internal'.
+There are 16 rows in 1 pages for object "syspolicy_target_sets_internal".
+DBCC results for 'sysutility_ucp_filegroups_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_filegroups_stub".
+DBCC results for 'backupfile'.
+There are 0 rows in 0 pages for object "backupfile".
+DBCC results for 'sysutility_ucp_datafiles_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_datafiles_stub".
+DBCC results for 'sysmail_query_transfer'.
+There are 0 rows in 0 pages for object "sysmail_query_transfer".
+DBCC results for 'sysutility_ucp_logfiles_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_logfiles_stub".
+DBCC results for 'sysschedules'.
+There are 8 rows in 1 pages for object "sysschedules".
+DBCC results for 'sysutility_ucp_cpu_utilization_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_cpu_utilization_stub".
+DBCC results for 'restorehistory'.
+There are 0 rows in 0 pages for object "restorehistory".
+DBCC results for 'syspolicy_target_set_levels_internal'.
+There are 22 rows in 1 pages for object "syspolicy_target_set_levels_internal".
+DBCC results for 'sysmail_attachments_transfer'.
+There are 0 rows in 0 pages for object "sysmail_attachments_transfer".
+DBCC results for 'sysutility_ucp_mi_database_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_mi_database_health_internal".
+DBCC results for 'restorefile'.
+There are 0 rows in 0 pages for object "restorefile".
+DBCC results for 'sysutility_ucp_space_utilization_stub'.
+There are 0 rows in 0 pages for object "sysutility_ucp_space_utilization_stub".
+DBCC results for 'restorefilegroup'.
+There are 0 rows in 0 pages for object "restorefilegroup".
+DBCC results for 'sysjobschedules'.
+There are 1 rows in 1 pages for object "sysjobschedules".
+DBCC results for 'logmarkhistory'.
+There are 0 rows in 0 pages for object "logmarkhistory".
+DBCC results for 'sysutility_ucp_dac_file_space_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_dac_file_space_health_internal".
+DBCC results for 'sysutility_mi_configuration_internal'.
+There are 0 rows in 0 pages for object "sysutility_mi_configuration_internal".
+DBCC results for 'suspect_pages'.
+There are 0 rows in 0 pages for object "suspect_pages".
+DBCC results for 'sys.queue_messages_1977058079'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1977058079".
+DBCC results for 'syscategories'.
+There are 21 rows in 1 pages for object "syscategories".
+DBCC results for 'sys.queue_messages_2009058193'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2009058193".
+DBCC results for 'systargetservers'.
+There are 0 rows in 0 pages for object "systargetservers".
+DBCC results for 'log_shipping_primaries'.
+There are 0 rows in 0 pages for object "log_shipping_primaries".
+DBCC results for 'sys.queue_messages_2041058307'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2041058307".
+DBCC results for 'sysutility_ucp_mi_volume_space_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_mi_volume_space_health_internal".
+DBCC results for 'systargetservergroups'.
+There are 0 rows in 0 pages for object "systargetservergroups".
+DBCC results for 'sys.filestream_tombstone_2073058421'.
+There are 0 rows in 0 pages for object "sys.filestream_tombstone_2073058421".
+DBCC results for 'log_shipping_secondaries'.
+There are 0 rows in 0 pages for object "log_shipping_secondaries".
+DBCC results for 'systargetservergroupmembers'.
+There are 0 rows in 0 pages for object "systargetservergroupmembers".
+DBCC results for 'sys.syscommittab'.
+There are 0 rows in 0 pages for object "sys.syscommittab".
+DBCC results for 'syspolicy_policy_category_subscriptions_internal'.
+There are 0 rows in 0 pages for object "syspolicy_policy_category_subscriptions_internal".
+DBCC results for 'sysalerts'.
+There are 0 rows in 0 pages for object "sysalerts".
+DBCC results for 'sys.filetable_updates_2105058535'.
+There are 0 rows in 0 pages for object "sys.filetable_updates_2105058535".
+DBCC results for 'sysutility_ucp_computer_cpu_health_internal'.
+There are 0 rows in 0 pages for object "sysutility_ucp_computer_cpu_health_internal".
+DBCC results for 'sysoperators'.
+There are 0 rows in 0 pages for object "sysoperators".
+CHECKDB found 0 allocation errors and 0 consistency errors in database 'msdb'.
+DBCC execution completed. If DBCC printed error messages, contact your system administrator.
+DBCC results for 'TestDB'.
+Service Broker Msg 9675, State 1: Message Types analyzed: 14.
+Service Broker Msg 9676, State 1: Service Contracts analyzed: 6.
+Service Broker Msg 9667, State 1: Services analyzed: 3.
+Service Broker Msg 9668, State 1: Service Queues analyzed: 3.
+Service Broker Msg 9669, State 1: Conversation Endpoints analyzed: 0.
+Service Broker Msg 9674, State 1: Conversation Groups analyzed: 0.
+Service Broker Msg 9670, State 1: Remote Service Bindings analyzed: 0.
+Service Broker Msg 9605, State 1: Conversation Priorities analyzed: 0.
+DBCC results for 'sys.sysrscols'.
+There are 1487 rows in 18 pages for object "sys.sysrscols".
+DBCC results for 'sys.sysrowsets'.
+There are 186 rows in 3 pages for object "sys.sysrowsets".
+DBCC results for 'sys.sysclones'.
+There are 0 rows in 0 pages for object "sys.sysclones".
+DBCC results for 'sys.sysallocunits'.
+There are 219 rows in 3 pages for object "sys.sysallocunits".
+DBCC results for 'sys.sysfiles1'.
+There are 2 rows in 1 pages for object "sys.sysfiles1".
+DBCC results for 'sys.sysseobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysseobjvalues".
+DBCC results for 'sys.syspriorities'.
+There are 0 rows in 0 pages for object "sys.syspriorities".
+DBCC results for 'sys.sysdbfrag'.
+There are 0 rows in 0 pages for object "sys.sysdbfrag".
+DBCC results for 'sys.sysfgfrag'.
+There are 0 rows in 0 pages for object "sys.sysfgfrag".
+DBCC results for 'sys.sysdbfiles'.
+There are 2 rows in 1 pages for object "sys.sysdbfiles".
+DBCC results for 'sys.syspru'.
+There are 0 rows in 0 pages for object "sys.syspru".
+DBCC results for 'sys.sysbrickfiles'.
+There are 0 rows in 0 pages for object "sys.sysbrickfiles".
+DBCC results for 'sys.sysphfg'.
+There are 1 rows in 1 pages for object "sys.sysphfg".
+DBCC results for 'sys.sysprufiles'.
+There are 2 rows in 1 pages for object "sys.sysprufiles".
+DBCC results for 'sys.sysftinds'.
+There are 0 rows in 0 pages for object "sys.sysftinds".
+DBCC results for 'sys.sysowners'.
+There are 14 rows in 1 pages for object "sys.sysowners".
+DBCC results for 'sys.sysdbreg'.
+There are 0 rows in 0 pages for object "sys.sysdbreg".
+DBCC results for 'sys.sysprivs'.
+There are 227 rows in 1 pages for object "sys.sysprivs".
+DBCC results for 'sys.sysschobjs'.
+There are 2775 rows in 46 pages for object "sys.sysschobjs".
+DBCC results for 'sys.syscsrowgroups'.
+There are 0 rows in 0 pages for object "sys.syscsrowgroups".
+DBCC results for 'sys.sysextsources'.
+There are 0 rows in 0 pages for object "sys.sysextsources".
+DBCC results for 'sys.sysexttables'.
+There are 0 rows in 0 pages for object "sys.sysexttables".
+DBCC results for 'sys.sysextfileformats'.
+There are 0 rows in 0 pages for object "sys.sysextfileformats".
+DBCC results for 'sys.sysmultiobjvalues'.
+There are 0 rows in 0 pages for object "sys.sysmultiobjvalues".
+DBCC results for 'sys.syscolpars'.
+There are 1223 rows in 24 pages for object "sys.syscolpars".
+DBCC results for 'sys.sysxlgns'.
+There are 0 rows in 0 pages for object "sys.sysxlgns".
+DBCC results for 'sys.sysxsrvs'.
+There are 0 rows in 0 pages for object "sys.sysxsrvs".
+DBCC results for 'sys.sysnsobjs'.
+There are 1 rows in 1 pages for object "sys.sysnsobjs".
+DBCC results for 'sys.sysusermsgs'.
+There are 0 rows in 0 pages for object "sys.sysusermsgs".
+DBCC results for 'sys.syscerts'.
+There are 0 rows in 0 pages for object "sys.syscerts".
+DBCC results for 'sys.sysrmtlgns'.
+There are 0 rows in 0 pages for object "sys.sysrmtlgns".
+DBCC results for 'sys.syslnklgns'.
+There are 0 rows in 0 pages for object "sys.syslnklgns".
+DBCC results for 'sys.sysxprops'.
+There are 0 rows in 0 pages for object "sys.sysxprops".
+DBCC results for 'sys.sysscalartypes'.
+There are 34 rows in 1 pages for object "sys.sysscalartypes".
+DBCC results for 'sys.systypedsubobjs'.
+There are 0 rows in 0 pages for object "sys.systypedsubobjs".
+DBCC results for 'sys.sysidxstats'.
+There are 237 rows in 5 pages for object "sys.sysidxstats".
+DBCC results for 'sys.sysiscols'.
+There are 463 rows in 2 pages for object "sys.sysiscols".
+DBCC results for 'sys.sysendpts'.
+There are 0 rows in 0 pages for object "sys.sysendpts".
+DBCC results for 'sys.syswebmethods'.
+There are 0 rows in 0 pages for object "sys.syswebmethods".
+DBCC results for 'sys.sysbinobjs'.
+There are 23 rows in 1 pages for object "sys.sysbinobjs".
+DBCC results for 'sys.sysaudacts'.
+There are 0 rows in 0 pages for object "sys.sysaudacts".
+DBCC results for 'sys.sysobjvalues'.
+There are 282 rows in 23 pages for object "sys.sysobjvalues".
+DBCC results for 'sys.syscscolsegments'.
+There are 0 rows in 0 pages for object "sys.syscscolsegments".
+DBCC results for 'sys.syscsdictionaries'.
+There are 0 rows in 0 pages for object "sys.syscsdictionaries".
+DBCC results for 'sys.sysclsobjs'.
+There are 26 rows in 1 pages for object "sys.sysclsobjs".
+DBCC results for 'sys.sysrowsetrefs'.
+There are 0 rows in 0 pages for object "sys.sysrowsetrefs".
+DBCC results for 'sys.sysremsvcbinds'.
+There are 0 rows in 0 pages for object "sys.sysremsvcbinds".
+DBCC results for 'sys.sysxmitqueue'.
+There are 0 rows in 0 pages for object "sys.sysxmitqueue".
+DBCC results for 'sys.sysrts'.
+There are 1 rows in 1 pages for object "sys.sysrts".
+DBCC results for 'sys.sysconvgroup'.
+There are 0 rows in 0 pages for object "sys.sysconvgroup".
+DBCC results for 'sys.sysdesend'.
+There are 0 rows in 0 pages for object "sys.sysdesend".
+DBCC results for 'sys.sysdercv'.
+There are 0 rows in 0 pages for object "sys.sysdercv".
+DBCC results for 'sys.syssingleobjrefs'.
+There are 198 rows in 1 pages for object "sys.syssingleobjrefs".
+DBCC results for 'sys.sysmultiobjrefs'.
+There are 107 rows in 1 pages for object "sys.sysmultiobjrefs".
+DBCC results for 'sys.sysguidrefs'.
+There are 0 rows in 0 pages for object "sys.sysguidrefs".
+DBCC results for 'sys.sysfoqueues'.
+There are 0 rows in 0 pages for object "sys.sysfoqueues".
+DBCC results for 'sys.syschildinsts'.
+There are 0 rows in 0 pages for object "sys.syschildinsts".
+DBCC results for 'sys.syscompfragments'.
+There are 0 rows in 0 pages for object "sys.syscompfragments".
+DBCC results for 'sys.sysftsemanticsdb'.
+There are 0 rows in 0 pages for object "sys.sysftsemanticsdb".
+DBCC results for 'sys.sysftstops'.
+There are 0 rows in 0 pages for object "sys.sysftstops".
+DBCC results for 'sys.sysftproperties'.
+There are 0 rows in 0 pages for object "sys.sysftproperties".
+DBCC results for 'sys.sysxmitbody'.
+There are 0 rows in 0 pages for object "sys.sysxmitbody".
+DBCC results for 'sys.sysfos'.
+There are 0 rows in 0 pages for object "sys.sysfos".
+DBCC results for 'sys.sysqnames'.
+There are 98 rows in 1 pages for object "sys.sysqnames".
+DBCC results for 'sys.sysxmlcomponent'.
+There are 100 rows in 1 pages for object "sys.sysxmlcomponent".
+DBCC results for 'sys.sysxmlfacet'.
+There are 112 rows in 1 pages for object "sys.sysxmlfacet".
+DBCC results for 'sys.sysxmlplacement'.
+There are 19 rows in 1 pages for object "sys.sysxmlplacement".
+DBCC results for 'sys.sysobjkeycrypts'.
+There are 0 rows in 0 pages for object "sys.sysobjkeycrypts".
+DBCC results for 'sys.sysasymkeys'.
+There are 0 rows in 0 pages for object "sys.sysasymkeys".
+DBCC results for 'sys.syssqlguides'.
+There are 0 rows in 0 pages for object "sys.syssqlguides".
+DBCC results for 'sys.sysbinsubobjs'.
+There are 3 rows in 1 pages for object "sys.sysbinsubobjs".
+DBCC results for 'sys.syssoftobjrefs'.
+There are 0 rows in 0 pages for object "sys.syssoftobjrefs".
+DBCC results for 'sys.sqlagent_jobs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobs".
+DBCC results for 'sys.sqlagent_jobsteps'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps".
+DBCC results for 'sys.sqlagent_job_history'.
+There are 0 rows in 0 pages for object "sys.sqlagent_job_history".
+DBCC results for 'sys.sqlagent_jobsteps_logs'.
+There are 0 rows in 0 pages for object "sys.sqlagent_jobsteps_logs".
+DBCC results for 'sys.plan_persist_query_text'.
+There are 1 rows in 1 pages for object "sys.plan_persist_query_text".
+DBCC results for 'sys.plan_persist_query'.
+There are 1 rows in 1 pages for object "sys.plan_persist_query".
+DBCC results for 'sys.plan_persist_plan'.
+There are 1 rows in 1 pages for object "sys.plan_persist_plan".
+DBCC results for 'sys.plan_persist_runtime_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_runtime_stats".
+DBCC results for 'sys.plan_persist_runtime_stats_interval'.
+There are 2 rows in 1 pages for object "sys.plan_persist_runtime_stats_interval".
+DBCC results for 'sys.plan_persist_context_settings'.
+There are 2 rows in 1 pages for object "sys.plan_persist_context_settings".
+DBCC results for 'sys.plan_persist_query_hints'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_hints".
+DBCC results for 'sys.plan_persist_query_template_parameterization'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_template_parameterization".
+DBCC results for 'sys.plan_persist_wait_stats'.
+There are 0 rows in 0 pages for object "sys.plan_persist_wait_stats".
+DBCC results for 'sys.persistent_version_store'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store".
+DBCC results for 'sys.persistent_version_store_long_term'.
+There are 0 rows in 0 pages for object "sys.persistent_version_store_long_term".
+DBCC results for 'sys.db_ledger_blocks'.
+There are 0 rows in 0 pages for object "sys.db_ledger_blocks".
+DBCC results for 'sys.db_ledger_transactions'.
+There are 0 rows in 0 pages for object "sys.db_ledger_transactions".
+DBCC results for 'sys.backup_metadata_store'.
+There are 0 rows in 0 pages for object "sys.backup_metadata_store".
+DBCC results for 'sys.plan_persist_plan_feedback'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_feedback".
+DBCC results for 'sys.plan_persist_query_variant'.
+There are 0 rows in 0 pages for object "sys.plan_persist_query_variant".
+DBCC results for 'sys.ledger_tables_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal".
+DBCC results for 'sys.ledger_tables_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_tables_history_internal_history".
+DBCC results for 'sys.ledger_columns_history_internal'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal".
+DBCC results for 'sys.ledger_columns_history_internal_history'.
+There are 0 rows in 0 pages for object "sys.ledger_columns_history_internal_history".
+DBCC results for 'sys.db_ledger_digest_locations'.
+There are 0 rows in 0 pages for object "sys.db_ledger_digest_locations".
+DBCC results for 'sys.plan_persist_replicas'.
+There are 0 rows in 0 pages for object "sys.plan_persist_replicas".
+DBCC results for 'sys.plan_persist_plan_forcing_locations'.
+There are 0 rows in 0 pages for object "sys.plan_persist_plan_forcing_locations".
+DBCC results for 'sys.plan_persist_runtime_stats_v2'.
+There are 1 rows in 1 pages for object "sys.plan_persist_runtime_stats_v2".
+DBCC results for 'sys.plan_persist_wait_stats_v2'.
+There are 2 rows in 1 pages for object "sys.plan_persist_wait_stats_v2".
+DBCC results for 'sys.wpr_bucket_table'.
+There are 0 rows in 0 pages for object "sys.wpr_bucket_table".
+DBCC results for 'sys.queue_messages_1977058079'.
+There are 0 rows in 0 pages for object "sys.queue_messages_1977058079".
+DBCC results for 'sys.queue_messages_2009058193'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2009058193".
+DBCC results for 'sys.queue_messages_2041058307'.
+There are 0 rows in 0 pages for object "sys.queue_messages_2041058307".
+DBCC results for 'sys.filestream_tombstone_2073058421'.
+There are 0 rows in 0 pages for object "sys.filestream_tombstone_2073058421".
+DBCC results for 'sys.syscommittab'.
+There are 0 rows in 0 pages for object "sys.syscommittab".
+DBCC results for 'sys.filetable_updates_2105058535'.
+There are 0 rows in 0 pages for object "sys.filetable_updates_2105058535".
+CHECKDB found 0 allocation errors and 0 consistency errors in database 'TestDB'.
+DBCC execution completed. If DBCC printed error messages, contact your system administrator.
+return status = 0
+---FINISH DATE & TIME---
+2024-07-25 17:44:42.393
+---ELAPSED TIME---
+00:00:02    
+ 
+[//07/2 17:44:42.54] ===== SQL Server Check Database Completed ===== 
+ 

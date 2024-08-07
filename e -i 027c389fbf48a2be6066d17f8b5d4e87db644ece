@@ -1,0 +1,175 @@
+[33mcommit 8088ca78e12d8f25f2aae544b18657b910bb2078[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 23:40:13 2024 +0900
+
+    first commit
+
+[33mcommit 386fcf14699571e3da78ba7411c1896330715ca6[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 23:40:02 2024 +0900
+
+    first commit
+
+[33mcommit 8af57dac1360ad5d18b9d9d139738be1badb38c2[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 23:33:27 2024 +0900
+
+    first commit
+
+[33mcommit fb0e6ae85407788c35ccde30a5977e3945f8f18d[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 23:26:39 2024 +0900
+
+    20240807
+
+[33mcommit 027c389fbf48a2be6066d17f8b5d4e87db644ece[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 19:32:46 2024 +0900
+
+    20240807F
+
+[33mcommit c7fc1b6d81abe6c42488dee726ac02d31e81f15e[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 19:06:32 2024 +0900
+
+    20240807E
+
+[33mcommit 758ecb076a03211507db44bf401ebe87479db297[m
+Merge: 4c45100 602c8f0
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 18:36:40 2024 +0900
+
+    Merge branch 'main' of https://github.com/NaruhiroIkeya/SQLServer
+
+[33mcommit 4c4510021fa6babc6d018a21ae56d4fc0589cdcf[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 18:36:29 2024 +0900
+
+    20240807D
+
+[33mcommit 602c8f08ac2c59194d7e8afd5c0d9bcd97386cd5[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 17:00:03 2024 +0900
+
+    Delete SQL/CreateCredential.sql
+
+[33mcommit c96f670767c953995cf30a28e34ccaccc84b8c69[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 16:57:25 2024 +0900
+
+    20240807C
+
+[33mcommit 7f44be88514db2e77c94165663c24fb95366f78b[m
+Merge: c8c85ed 5fd7d21
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 16:52:21 2024 +0900
+
+    Merge branch 'main' of https://github.com/NaruhiroIkeya/SQLServer
+
+[33mcommit 5fd7d218dcb252e51a34928f8ad80d11d5f877b9[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:41:30 2024 +0900
+
+    Delete SQLSysDBFullBackup2S3.sql
+
+[33mcommit 330782e0a64c72351262e3921386d92128c0cccb[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:41:20 2024 +0900
+
+    Delete SQLSysDBFullBackup2S3.bat
+
+[33mcommit 772a1fbf941f59dc2f36ebff21365b2e0a051cbf[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:41:05 2024 +0900
+
+    Delete SQLDBFullBackup2S3.sql
+
+[33mcommit cf9bfddbbe066e29762428f1339f00fd88d2b398[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:40:50 2024 +0900
+
+    Delete SQLDBLogBackup2S3.sql
+
+[33mcommit 6ed152d745354a56c5e04acbbc84e46ff85a93ab[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:40:40 2024 +0900
+
+    Delete SQLDBLogBackup2S3.bat
+
+[33mcommit deb2c5289057a2ead55fd505a011c11ebc221847[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:40:30 2024 +0900
+
+    Delete SQLDBDiffBackup2S3.sql
+
+[33mcommit fd2fc8c58e2af6def316a8f9637da767991d9f21[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:40:13 2024 +0900
+
+    Delete SQLDBFullBackup2S3.bat
+
+[33mcommit e2efd735637193f0bfa0f9940d9911d9e31903bd[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:40:02 2024 +0900
+
+    Delete SQLDBDiffBackup2S3.bat
+
+[33mcommit 1b736d206b085951b9b4d0d309ba78006cc02939[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:39:47 2024 +0900
+
+    Delete CreateCredential.sql
+
+[33mcommit b901aacbf28db29812c9d2d4c3479da7f42e1486[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:39:34 2024 +0900
+
+    Delete CheckDatabase4AllDatabases.sql
+
+[33mcommit 0d53673ec6127b2fd8dfb2e0647af604d4fab79b[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:39:22 2024 +0900
+
+    Delete CheckDatabase4AllDatabases.bat
+
+[33mcommit 7c621b9543c4bac2f231e2d0625bb537d9301bf8[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:37:04 2024 +0900
+
+    20240807B
+
+[33mcommit a67c815263cce046643811c38aa7965c156df3ab[m
+Author: NaruhiroIkeya <51503619+NaruhiroIkeya@users.noreply.github.com>
+Date:   Wed Aug 7 16:34:22 2024 +0900
+
+    20240807A
+
+[33mcommit c8c85edc26af6ab3d537315a15aa0a967132d44c[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Wed Aug 7 16:28:42 2024 +0900
+
+    20240807
+
+[33mcommit deab3ba11de45276b9f3662637ddfd497cc7a302[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Tue Aug 6 19:30:26 2024 +0900
+
+    20240806
+
+[33mcommit 11a0019b0bbedb9492f077bcb1975f2fe646711d[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Thu Aug 1 13:49:12 2024 +0900
+
+    20240801
+
+[33mcommit 3425ddd737a3bf46a1fbc4509f4e0310cf7900bf[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Fri May 10 10:41:39 2024 +0900
+
+    20240510
+
+[33mcommit 8451db2bfd97b4f8a47e3ff5654e65587339102a[m
+Author: Naruhiro Ikeya <naruhiro.ikeya@beex-inc.com>
+Date:   Fri May 10 10:35:52 2024 +0900
+
+    first commit
