@@ -2,12 +2,12 @@
 :: Copyright(c) 2024 BeeX Inc. All rights reserved.
 :: @auther:Naruhiro Ikeya
 ::
-:: @name:SQLBackup2S3.bat
-:: @summary:SQL Server Database Differencial Backup
+:: @name:CheckDatabase4AllDatabases.bat
+:: @summary:SQL Server Check Database for All Databases
 ::
 :: @since:2024/07/22
 :: @version:1.0
-:: @see:SQLDBDiffBackup2S3.ps1
+:: @see:CheckDatabase4AllDatabases.ps1
 ::
 :: @param:none
 :: @return:0:Success 9:Error
@@ -17,12 +17,8 @@
 :::::::::::::::::::::::::::::::::::::
 ::       Environment Setting       ::
 :::::::::::::::::::::::::::::::::::::
-SET __DATABASENAME__="N'TestDB'"
-SET __S3BUCKET__="N's3://beexsqlbackup.s3.ap-northeast-1.amazonaws.com/sqlbackup/'"
-SET __STRIPING__=32
 SET __LOG_CYCLE__=14
-SET __LOG_PREFIX__=DBDiffBackup
-
+SET __LOG_PREFIX__=SQLCheckDatabase
 SET __SQLCMD__=C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\SQLCMD.EXE
 :: Database Instance Host Name
 SET __DBHOSTNAME__=%COMPUTERNAME%
@@ -59,7 +55,7 @@ FORFILES /P %__LOGPATH__% /M *%__LOG_PREFIX__%*.log /D -%__LOG_CYCLE__% /C "CMD 
 ::   Main Procedure               ::
 ::::::::::::::::::::::::::::::::::::
 
-CALL :__ECHO__ ===== SQL Server Backup Database Start =====
+CALL :__ECHO__ ===== SQL Server Check Database Start =====
 ECHO. >> "%__LOGFILE__%"
 CALL :__ECHO__ ================ Parameters =================
 CALL :__ECHO__ Database Host Name       = %__DBHOSTNAME__%
@@ -68,26 +64,26 @@ CALL :__ECHO__ Log File                 = %__LOGFILE__%
 CALL :__ECHO__ ==============================================
 ECHO. >> "%__LOGFILE__%"
 
-ECHO "%__SQLCMD__%" -E -S %__DBHOSTNAME__%\%__INSTANCENAME__% -i %__EXEC_SQL_FILE__% -o %__EXEC_LOG_FILE__% -v DatabaseName = %__DATABASENAME__% S3bucket = %__S3BUCKET__% Striping = %__STRIPING__% -b -r1 >> "%__LOGFILE__%"
+ECHO "%__SQLCMD__%" -E -S %__DBHOSTNAME__%\%__INSTANCENAME__% -i %__EXEC_SQL_FILE__% -o %__EXEC_LOG_FILE__% -b -r1  >> "%__LOGFILE__%"
 
-"%__SQLCMD__%" -E -S %__DBHOSTNAME__%\%__INSTANCENAME__% -i %__EXEC_SQL_FILE__% -o %__EXEC_LOG_FILE__% -v DatabaseName = %__DATABASENAME__% S3bucket = %__S3BUCKET__% Striping = %__STRIPING__% -b -r1
+"%__SQLCMD__%" -E -S %__DBHOSTNAME__%\%__INSTANCENAME__% -i %__EXEC_SQL_FILE__% -o %__EXEC_LOG_FILE__% -b -r1
 
 IF ERRORLEVEL 1 (
-  CALL :__ECHO__  Backup Database Execute Error
+  CALL :__ECHO__  Check Database Execute Error
   ECHO Please check log file ^(%__EXEC_LOG_FILE__%^) >> "%__LOGFILE__%"
-  EXIT /B 10
+  EXIT /B 9
 )
 
 TYPE %__EXEC_LOG_FILE__% >> "%__LOGFILE__%"
 FINDSTR /C:"return status = 1" %__EXEC_LOG_FILE__% 1>NUL 2>NUL
 IF %ERRORLEVEL% EQU 0 (
-  CALL :__ECHO__ Backup Database Execute Error
+  CALL :__ECHO__ Check Database Execute Error
   DEL /Q %__EXEC_LOG_FILE__%
   EXIT /B 9
 )
 DEL /Q %__EXEC_LOG_FILE__%
 ECHO. >> "%__LOGFILE__%"
-CALL :__ECHO__ ===== SQLServer Backup Database Completed =====
+CALL :__ECHO__ ===== SQL Server Check Database Completed =====
 ECHO. >> "%__LOGFILE__%"
 
 :__QUIT__
