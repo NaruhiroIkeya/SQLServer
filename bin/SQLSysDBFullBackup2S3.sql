@@ -6,7 +6,7 @@ DECLARE @EXEC_SQL VARCHAR(MAX);
 DECLARE @STARTDATE datetime;
 DECLARE @FINISHDATE datetime;
 
-SET @EXEC_SQL = 'USE [?]; IF DB_ID() IN (1, 4, 3) BEGIN BACKUP DATABASE [?] TO URL = ''' + @BACKUP_URL + '?_FULL' + @StringDate + '.bak'' END'
+SET @EXEC_SQL = 'USE [?]; IF DB_ID() IN (1, 4, 3) BEGIN BACKUP DATABASE [?] TO URL = ''' + @BACKUP_URL + '?_FULL_' + @StringDate + '.bak'' END'
 
 PRINT '---START DATE & TIME---'
 PRINT CONVERT(varchar,@STARTDATE,121);
