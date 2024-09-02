@@ -2,15 +2,16 @@ PRINT '---Backup All System Databases---'
 DECLARE @BACKUP_URL VARCHAR(128) = $(S3bucket)
 
 DECLARE @StringDate CHAR(12) = FORMAT(GETDATE(),'yyyyMMddHHmm');
+DECLARE @HOSTNAME VARCHAR(64) = @@SERVERNAME;
 DECLARE @EXEC_SQL VARCHAR(MAX);
 DECLARE @STARTDATE datetime;
 DECLARE @FINISHDATE datetime;
 
-SET @EXEC_SQL = 'USE [?]; IF DB_ID() IN (1, 4, 3) BEGIN BACKUP DATABASE [?] TO URL = ''' + @BACKUP_URL + '?_FULL_' + @StringDate + '.bak'' END'
+SET @EXEC_SQL = 'USE [?]; IF DB_ID() IN (1, 4, 3) BEGIN BACKUP DATABASE [?] TO URL = ''' + @BACKUP_URL + @HOSTNAME + '_' + '?_FULL_' + @StringDate + '.bak'' END'
 
 PRINT '---START DATE & TIME---'
 PRINT CONVERT(varchar,@STARTDATE,121);
-EXEC sp_msforeachdb @EXEC_SQL
+EXEC sys.sp_MSforeachdb @EXEC_SQL
 IF @@ERROR = 0
   BEGIN
     PRINT 'return status = 0'
