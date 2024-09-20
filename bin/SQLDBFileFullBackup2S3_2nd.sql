@@ -2,16 +2,18 @@ DECLARE @DATABASE VARCHAR(16) = $(DatabaseName);
 DECLARE @MAX_STRIPING INT = $(Striping);
 
 DECLARE @EXEC_SQL VARCHAR(MAX);
+DECLARE @DATABASE_FILES CHAR(128);
 DECLARE @StringDate CHAR(12) = FORMAT(GETDATE(),'yyyyMMddHHmm');
 DECLARE @HOSTNAME VARCHAR(64) = @@SERVERNAME;
-DECLARE @BACKUP_URL VARCHAR(128) = $(S3bucket) + @HOSTNAME + '_' + @DATABASE + '_LOG_' + @StringDate;
+DECLARE @BACKUP_URL VARCHAR(128) = $(S3bucket) + @HOSTNAME + '_' + @DATABASE + '_FULL_' + @StringDate;
 DECLARE @Counter INT;
 
 SET @Counter=1;
-SET @EXEC_SQL = 'BACKUP LOG [' + @DATABASE + '] TO ';
+SET @DATABASE_FILES = 'FILE =' + @DATABASE + 'DATA3, ' + @DATABASE + 'DATA4, ' + @DATABASE + 'DATA7, ' + @DATABASE + 'DATA8, ' + @DATABASE + 'DATA11, ' + @DATABASE + 'DATA12, ' + @DATABASE + 'DATA15, ' + @DATABASE + 'DATA16'
+SET @EXEC_SQL = 'BACKUP DATABASE [' + @DATABASE + '] ' + @DATABASE_FILES + ' TO ';
 WHILE ( @Counter <= @MAX_STRIPING)
 BEGIN
-    SET @EXEC_SQL = @EXEC_SQL + 'URL = ''' + @BACKUP_URL + '_' + FORMAT(@Counter, 'D2') + '.trn'''
+    SET @EXEC_SQL = @EXEC_SQL + 'URL = ''' + @BACKUP_URL + '_' + FORMAT(@Counter, 'D2') + '.bak'''
     SET @Counter  = @Counter  + 1
 	IF ( @Counter <= @MAX_STRIPING ) 
 	  SET @EXEC_SQL = @EXEC_SQL + ', ';
