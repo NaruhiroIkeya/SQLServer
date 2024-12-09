@@ -19,7 +19,7 @@
 :::::::::::::::::::::::::::::::::::::
 SET __DATABASENAME__="N'TestDB'"
 SET __S3BUCKET__="N's3://beexsqlbackup.s3.ap-northeast-1.amazonaws.com/sqlbackup/'"
-SET __STRIPING__=32
+SET __STRIPING__=64
 SET __LOG_CYCLE__=14
 SET __LOG_PREFIX__=DBFullBackup
 
